@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Frontend</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%234e54c8'/><stop offset='100%' stop-color='%238f94fb'/></linearGradient></defs><rect width='100' height='100' rx='15' fill='url(%23grad)'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'>EG</text></svg>">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Frontend || developer</a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#about" data-i18n="about">Обо мне</a>
+                    <a href="#experience" data-i18n="experience">Опыт</a>
+                    <a href="#education" data-i18n="education">Образование</a>
+                    <a href="#skills" data-i18n="skills">Навыки</a>
+                    <a href="#projects" data-i18n="projects">Проекты</a>
+                    <a href="#testimonials" data-i18n="testimonials">Отзывы</a>
+                    <a href="#contact" data-i18n="contact">Контакты</a>
+                    <div class="header-controls">
+                        <button id="themeToggle" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <div class="language-switcher">
+                            <button class="lang-btn active" data-lang="ru">RU</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">Привет, я
+                    <span class="highlight">Endri Grigoryan</span>
+                </h1>
+                <p class="subtitle" data-i18n="hero_subtitle">[Ваша профессия/специализация]</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn" data-i18n="view_work">Мои работы</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="contact_me">Связаться</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="img/avatar/avatar.jpg" alt="[Endri Grigoryan]" class="profile-img">
+                    <div class="circle-animation"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-i18n="about_title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/avatar/user.png" alt="Обо мне">
+                </div>
+                <div class="about-text">
+                    <p data-i18n="about_text1">Здесь вы можете рассказать о себе, своем опыте и профессиональных
+                        интересах. Расскажите, чем вы увлекаетесь, какие технологии используете и что вас вдохновляет.
+                    </p>
+                    <p data-i18n="about_text2">Мой опыт включает работу над различными проектами, от небольших сайтов до
+                        сложных веб-приложений. Я постоянно учусь и совершенствую свои навыки.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span data-i18n="name">Имя:</span>
+                            <span data-i18n="name-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span data-i18n="email">Email:</span>
+                            <span data-i18n="email-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span data-i18n="experience_years">Опыт:</span>
+                            <span data-i18n="experience_value"></span>
+                        </div>
+                        <div class="info-item">
+                            <span data-i18n="location">Местоположение:</span>
+                            <span data-i18n="location_value"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 data-i18n="experience_title">Опыт работы</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - Настоящее время</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="job1_title">Frontend разработчик</h3>
+                        <h4 data-i18n="job1_company">Компания ABC</h4>
+                        <p data-i18n="job1_description">Разработка и поддержка пользовательских интерфейсов для
+                            веб-приложений. Оптимизация производительности и доступности.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="job2_title">Веб-разработчик</h3>
+                        <h4 data-i18n="job2_company">Студия XYZ</h4>
+                        <p data-i18n="job2_description">Создание адаптивных веб-сайтов и интернет-магазинов. Работа с
+                            клиентами и реализация их требований.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2017 - 2019</div>
+                    <div class="timeline-content">
+                        <h3 data-i18n="job3_title">Стажер</h3>
+                        <h4 data-i18n="job3_company">Технологическая компания</h4>
+                        <p data-i18n="job3_description">Обучение основам веб-разработки, участие в командных проектах,
+                            изучение современных технологий.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2 data-i18n="education_title">Образование</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 data-i18n="degree1">Бакалавр компьютерных наук</h3>
+                        <h4 data-i18n="university1">Университет ABC</h4>
+                        <p class="education-year" data-i18n="education_year1">2015 - 2019</p>
+                        <p data-i18n="education_desc1">Изучение алгоритмов, структур данных, веб-технологий и принципов
+                            разработки ПО.</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 data-i18n="degree2">Курсы веб-разработки</h3>
+                        <h4 data-i18n="university2">Онлайн платформа XYZ</h4>
+                        <p class="education-year" data-i18n="education_year2">2020</p>
+                        <p data-i18n="education_desc2">Продвинутые курсы по современным фреймворкам и инструментам
+                            веб-разработки.</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 data-i18n="degree3">Сертификация</h3>
+                        <h4 data-i18n="university3">Организация DEF</h4>
+                        <p class="education-year" data-i18n="education_year3">2021</p>
+                        <p data-i18n="education_desc3">Сертификация по специализированным технологиям и методологиям
+                            разработки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 data-i18n="skills_title">Навыки</h2>
+            <div class="skills-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="frontend" data-i18n="frontend">Frontend</button>
+                    <button class="tab-btn" data-tab="backend" data-i18n="backend">Backend</button>
+                    <button class="tab-btn" data-tab="tools" data-i18n="tools">Инструменты</button>
+                </div>
+                <div class="tab-content active" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML5</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS3</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3>React</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h3>Node.js</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h3>Git</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h3>Figma</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 data-i18n="projects_title">Мои проекты</h2>
+
+            <!-- Фильтры по категориям -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="markup">Вёрстка</button>
+                <button class="filter-btn" data-filter="js">JavaScript</button>
+                <button class="filter-btn" data-filter="skillbox">Skillbox</button>
+                <button class="filter-btn" data-filter="skillbox-3.0">Skillbox 3.0</button>
+                <button class="filter-btn" data-filter="react">React</button>
+            </div>
+
+            <!-- Сетка проектов -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Проекты будут добавляться через JavaScript -->
+            </div>
+
+            <!-- Пагинация -->
+            <div class="pagination" id="pagination">
+                <button class="page-btn prev" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="page-numbers"></div>
+                <button class="page-btn next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно проекта -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img class="modal-image" src="" alt="">
+            <div class="modal-info">
+                <h3 class="modal-title"></h3>
+                <div class="modal-meta">
+                    <span class="modal-category"></span>
+                    <span class="modal-date"></span>
+                </div>
+                <p class="modal-description"></p>
+                <div class="modal-tech"></div>
+                <div class="modal-links">
+                    <a href="#" class="btn modal-links__btn" target="_blank" id="liveLink">
+                        <i class="fas fa-external-link-alt"></i> Посмотреть онлайн
+                    </a>
+                    <a href="#" class="btn btn-outline modal-links__btn" target="_blank" id="codeLink">
+                        <i class="fab fa-github"></i> Исходный код
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 data-i18n="testimonials_title">Отзывы</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p data-i18n="testimonial1_text">Отличная работа! Профессиональный подход и внимание к деталям.
+                            Проект был завершен вовремя и превзошел все ожидания.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/avatar/user.png" alt="Клиент 1">
+                        <div class="author-info">
+                            <h4 data-i18n="testimonial1_name">Иван Петров</h4>
+                            <p data-i18n="testimonial1_position">Директор, Компания ABC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p data-i18n="testimonial2_text">Очень доволен сотрудничеством. Разработчик проявил инициативу и
+                            предложил отличные решения для нашего проекта.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/avatar/user.png" alt="Клиент 2">
+                        <div class="author-info">
+                            <h4 data-i18n="testimonial2_name">Анна Смирнова</h4>
+                            <p data-i18n="testimonial2_position">Менеджер проектов, Студия XYZ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p data-i18n="testimonial3_text">Работа выполнена на высоком уровне. Все требования были учтены,
+                            а результат превзошел ожидания. Рекомендую!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/avatar/user.png" alt="Клиент 3">
+                        <div class="author-info">
+                            <h4 data-i18n="testimonial3_name">Дмитрий Иванов</h4>
+                            <p data-i18n="testimonial3_position">CEO, Стартап DEF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 data-i18n="contact_title">Свяжитесь со мной</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3 data-i18n="email">Email</h3>
+                            <p>enik.grigoryan@yandex.ru</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-i18n="phone">Телефон</h3>
+                            <p>+7 (920) 575-73-85</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3 data-i18n="location">Местоположение</h3>
+                            <p data-i18n="location_value">Город, Страна</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name" data-i18n="form_name">Ваше имя</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email" data-i18n="form_email">Ваш email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" ">
+                        <label for="subject" data-i18n="form_subject">Тема</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " required></textarea>
+                        <label for="message" data-i18n="form_message">Ваше сообщение</label>
+                    </div>
+                    <button type="submit" class="btn" data-i18n="form_submit">Отправить сообщение</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3 data-i18n="footer_about">О портфолио</h3>
+                    <p data-i18n="footer_about_text">Это портфолио создано для демонстрации моих навыков и проектов. Вы
+                        можете связаться со мной для обсуждения сотрудничества.</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-i18n="footer_links">Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#about" data-i18n="about">Обо мне</a></li>
+                        <li><a href="#experience" data-i18n="experience">Опыт</a></li>
+                        <li><a href="#projects" data-i18n="projects">Проекты</a></li>
+                        <li><a href="#contact" data-i18n="contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 data-i18n="footer_social">Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Endri94" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/shakeitoff17" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> <span data-i18n="footer_rights">Мое портфолио. Все права
+                        защищены.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>
